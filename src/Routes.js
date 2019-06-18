@@ -5,6 +5,7 @@ import Props from './component/props/props';
 import Lifecycle from './component/lifecycle/lifecycle';
 import ParentToChild from './component/parent-to-child/parentToChild';
 import ChildToParent from './component/child-to-parent/childToParent';
+import StateFullContainer from './component/state-full-component/state-full-component';
 import {
     BrowserRouter as Router,
     Route,
@@ -22,6 +23,7 @@ class RouteComponent extends Component {
                             <li><Link to="/lifecycle">Lifecycle Component</Link></li>
                             <li><Link to="/parentToChild">Parent To Child</Link></li>
                             <li><Link to="/childToParent">Child To Parent</Link></li>
+                            <li><Link to="/components">Component Types</Link></li>
                         </ul>
                     </nav>
                     <article>
@@ -31,6 +33,7 @@ class RouteComponent extends Component {
                         <Route path="/lifecycle" component={Lifecycle} />
                         <Route path="/parentToChild" component={ParentToChild} />
                         <Route path="/childToParent" component={ChildToParent} />
+                        <Route path="/components" component={StateFullContainer} />
                     </article>
                 </Router>
             </div>
