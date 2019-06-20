@@ -7,6 +7,7 @@ import ParentToChild from './component/parent-to-child/parentToChild';
 import ChildToParent from './component/child-to-parent/childToParent';
 import StateFullContainer from './component/state-full-component/state-full-component';
 import ReusableComponent from './component/reusable-component/reusable-component';
+import ApiComponent from './component/api-component/api-component';
 
 import {
     BrowserRouter as Router,
@@ -27,6 +28,7 @@ class RouteComponent extends Component {
                             <li><Link to="/childToParent">Child To Parent</Link></li>
                             <li><Link to="/components">Component Types</Link></li>
                             <li><Link to="/reusable">Reusable Component</Link></li>
+                            <li><Link to="/api">Api Component</Link></li>
                         </ul>
                     </nav>
                     <article>
@@ -38,6 +40,7 @@ class RouteComponent extends Component {
                         <Route path="/childToParent" component={ChildToParent} />
                         <Route path="/components" component={StateFullContainer} />
                         <Route path="/reusable" component={ReusableComponent} />
+                        <Route path="/api" component={ApiComponent} />
                     </article>
                 </Router>
             </div>
